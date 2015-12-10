@@ -61,30 +61,39 @@ public class listenMain {
 //        
 //        boolean enth = sort.contains(8);
 //        System.out.println(enth);
-        BinaryTreeNode acht = new BinaryTreeNode(8);
-        BinaryTreeNode vier = new BinaryTreeNode(4);
-        BinaryTreeNode fuenf = new BinaryTreeNode(5);
-        BinaryTreeNode neun = new BinaryTreeNode(9);
-        BinaryTreeNode sechs = new BinaryTreeNode(6, null, fuenf);
-        BinaryTreeNode eins = new BinaryTreeNode(1, vier, acht);
-        BinaryTreeNode zwei = new BinaryTreeNode(2, neun, sechs);
-        BinaryTreeNode sieben = new BinaryTreeNode(7, zwei, eins);
-        //BinaryTree t = new BinaryTree(sieben);
-        BinaryTree t = new BinaryTree();
-        //t.
+//        BinaryTreeNode acht = new BinaryTreeNode(8);
+//        BinaryTreeNode vier = new BinaryTreeNode(4);
+//        BinaryTreeNode fuenf = new BinaryTreeNode(5);
+//        BinaryTreeNode neun = new BinaryTreeNode(9);
+//        BinaryTreeNode sechs = new BinaryTreeNode(6, null, fuenf);
+//        BinaryTreeNode eins = new BinaryTreeNode(1, vier, acht);
+//        BinaryTreeNode zwei = new BinaryTreeNode(2, neun, sechs);
+//        BinaryTreeNode sieben = new BinaryTreeNode(7, zwei, eins);
+//        BinaryTree t = new BinaryTree(sieben);
+        
+        
+        
                 
-                
-        t.printPreorder();
-        System.out.println("das war preorder");
+        //t.printPreorder();
+        //System.out.println("");
+        //System.out.println("das war preorder");
 //        t.printInorder();
 //        System.out.println("das war inorder");
 //        t.printPostorder();
 //        System.out.println("das war postorder");
         
+        BinaryTreeNode root = new BinaryTreeNode();
+        BinarySearchTree t = new BinarySearchTree(root);
+        t.add(10);
+        t.add(20);
+        t.add(5);
+        
         
         
         boolean contains = t.contains(10);
         System.out.println(contains);
+        
+        t.printInorder();
         
     }
 
